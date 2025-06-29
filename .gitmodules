@@ -1,8 +1,11 @@
 [submodule "lib/chainlink-brownie-contracts"]
-	path = lib/chainlink-brownie-contracts
-	url = git@github.com:smartcontractkit/chainlink-brownie-contracts.git
+    path = lib/chainlink-brownie-contracts
+    url = git@github.com:smartcontractkit/chainlink-brownie-contracts.git
+
 [submodule "lib/forge-std"]
-	path = lib/forge-std
-	url = git@github.com:foundry-rs/forge-std.git
+    path = lib/forge-std
+    url = git@github.com:foundry-rs/forge-std.git
+
 [submodule "lib/foundry-devops"]
-	url = git@github.com:smartcontractkit/foundry-devops.git
+    path = lib/foundry-devops
+    url = git@github.com:smartcontractkit/foundry-devops.git
