@@ -20,7 +20,7 @@
 // internal & private view & pure functions
 // external & public view & pure functions
 
-// SPDX-lICENSE-Identifier: MIT
+// SPDX-License-Identifier: MIT
 pragma solidity 0.8.19;
 
 import {VRFConsumerBaseV2Plus} from "@chainlink/contracts/src/v0.8/vrf/dev/VRFConsumerBaseV2Plus.sol";
@@ -153,7 +153,7 @@ contract Raffle is VRFConsumerBaseV2Plus {
 
         // Quiz... is this redundant?  yes, because chainlink is also emiting this event
         emit RequestedRaffleWinner(requestId); // Emit an event to notify that a request for random words has been made
-    }   
+    }
 
     // CEI - Checks, Effects, Interactions Pattern
     function fulfillRandomWords(
@@ -196,5 +196,5 @@ contract Raffle is VRFConsumerBaseV2Plus {
 
     function getRecentWinner() external view returns (address) {
         return s_recentWinner;
-    }   
+    }
 }
